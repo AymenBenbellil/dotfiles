@@ -61,9 +61,9 @@ polybar &
 xsetroot -cursor_name left_ptr
 
 # Pipewire
-/usr/bin/pipewire &
-/usr/bin/pipewire-pulse &
-/usr/bin/pipewire-media-session &
+#/usr/bin/pipewire &
+#/usr/bin/pipewire-pulse &
+#/usr/bin/pipewire-media-session &
 
 # Picom
 picom -f &
