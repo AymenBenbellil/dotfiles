@@ -8,7 +8,15 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 # merge in defaults and keymaps
 
 if [ -f $sysresources ]; then
+
+
+
+
+
+
+
     xrdb -merge $sysresources
+
 fi
 
 if [ -f $sysmodmap ]; then
@@ -16,7 +24,15 @@ if [ -f $sysmodmap ]; then
 fi
 
 if [ -f "$userresources" ]; then
+
+
+
+
+
+
+
     xrdb -merge "$userresources"
+
 fi
 
 if [ -f "$usermodmap" ]; then
@@ -33,23 +49,24 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 
-# Declare The Wallpaper Variable
-wallpaper=~/wallpapers/destiny.png
 
-# Set The Wallpaper
-xwallpaper --zoom $wallpaper
 
-# Pywal
-wal -i $wallpaper
+# wallpaper
+xwallpaper --zoom ~/wallpapers/wall.jpg
 
-# Enable Picom
-#picom -f & 
+# Polybar
+polybar &
 
-# Run dwmblocks
-dwmblocks &
+# Fix Mouse Pointer
+xsetroot -cursor_name left_ptr
 
-# Select & Run The Window Manager
-exec dwm
+# Pipewire
+/usr/bin/pipewire &
+/usr/bin/pipewire-pulse &
+/usr/bin/pipewire-media-session &
 
-# Start PulseAudio 
-pulseaudio &
+# Picom
+picom -f &
+
+# Window Manager
+exec bspwm
