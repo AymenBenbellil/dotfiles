@@ -52,21 +52,13 @@ fi
 
 
 # wallpaper
-xwallpaper --zoom ~/wallpapers/wall.jpg
+xwallpaper --zoom ~/wallpapers/everforest.jpg
 
-# Polybar
-polybar &
-
-# Fix Mouse Pointer
-xsetroot -cursor_name left_ptr
-
-# Pipewire
-#/usr/bin/pipewire &
-#/usr/bin/pipewire-pulse &
-#/usr/bin/pipewire-media-session &
+# Pulseaudio
+/usr/bin/pulseaudio &
 
 # Picom
 picom -f &
 
 # Window Manager
-exec bspwm
+exec i3
