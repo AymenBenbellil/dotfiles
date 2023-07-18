@@ -52,10 +52,7 @@ fi
 
 
 # wallpaper
-xwallpaper --zoom ~/wallpapers/debian_grey.png
-
-# Pulseaudio
-/usr/bin/pulseaudio &
+xwallpaper --zoom ~/wallpapers/void.png
 
 # Picom
 picom -f &
