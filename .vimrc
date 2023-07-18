@@ -54,3 +54,4 @@ endif
 
 set background=dark
 colorscheme gruvbox
+set number
