@@ -16,8 +16,8 @@ set $mod Mod4
 #font pango:JetBrains Mono 14
 
 # Gaps
-gaps inner 12
-gaps outer 10
+gaps inner 8
+gaps outer 4
 
 # Borders
 default_border pixel 0
@@ -125,6 +125,12 @@ bindsym $mod+Shift+v exec virt-manager
 
 # Open thunar
 bindsym $mod+Shift+Return exec thunar
+
+# Open fdm
+bindsym $mod+t exec fdm
+
+# Open lutris
+bindsym $mod+g exec lutris
 
 # focus the child container
 #bindsym $mod+d focus child
