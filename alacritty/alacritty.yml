@@ -23,7 +23,7 @@
   # available, otherwise `xterm-256color` is used.
   #TERM: alacritty
 
-window:
+#window:
   # Window dimensions (changes require restart)
   #
   # Number of lines/columns (not pixels) in the terminal. Both lines and columns
@@ -68,7 +68,7 @@ window:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 0.8
+  #opacity: 0.8
 
   # Startup Mode (changes require restart)
   #
@@ -170,7 +170,10 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 15.0
+  size: 13.0
+
+import:
+  - ~/.config/alacritty/gruvbox_dark.yaml
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -197,11 +200,11 @@ font:
 #draw_bold_text_with_bright_colors: false
 
 # Colors (Tomorrow Night)
-colors:
+#colors:
   # Default colors
-  primary:
-    background: '#282828'
-    foreground: '#fbf1c7'
+  #primary:
+    #background: '#282828'
+    #foreground: '#fbf1c7'
 
     # Bright and dim foreground colors
     #
