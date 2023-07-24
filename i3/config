@@ -29,7 +29,7 @@ default_floating_border pixel 1
 
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #d65d0e #282828 #ffffff #d65d0e   #d65d0e
+client.focused          #d65d0e #282828 #ffffff #b8bb26   #b8bb26
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
@@ -146,6 +146,12 @@ bindsym $mod+t exec fdm
 
 # Open ranger
 bindsym $mod+Control+Return exec alacritty -e ranger
+
+# Play 0ad
+bindsym $mod+g exec 0ad
+
+# Open pavucontrol
+bindsym $mod+Control+s exec pavucontrol
 
 # focus the child container
 #bindsym $mod+d focus child
