@@ -45,10 +45,14 @@ alias eusb='sudo eject /dev/sdc'
 # vim shortcuts
 alias vi='vim'
 alias svi='sudo vim'
+alias vib='vim ~/.bashrc'
 
 # other stuff
 alias xwz='xwallpaper --zoom'
 alias sbrc='source ~/.bashrc'
 alias sx='startx'
+alias vns='sudo versh net-start default'
+alias vnd='sudo virsh net-delete default'
+alias yt='yt-dlp'
 
 PS1='[\u@\h \W]\$ '
