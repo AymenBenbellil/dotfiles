@@ -135,6 +135,12 @@ bindsym $mod+a focus parent
 # Browser
 bindsym $mod+w exec  --no-startup-id librewolf
 
+# Open youtube
+bindsym $mod+y exec  --no-startup-id librewolf youtube.com
+
+# Open github
+bindsym $mod+g exec  --no-startup-id librewolf github.com/AymenBenbellil?tab=repositories
+
 # Open virt-manager
 bindsym $mod+Shift+v exec --no-startup-id virt-manager
 
@@ -232,7 +238,7 @@ bar {
 	colors {
         background #282828
         statusline #fbf1c7
-        separator #d5c4a1
+        separator #282828
 	focused_workspace #a89984 #a89984 #282828
     }
 }
