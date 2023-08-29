@@ -47,12 +47,16 @@ alias vi='vim'
 alias svi='sudo vim'
 alias vib='vim ~/.bashrc'
 
+# qemu/libvirt actions
+alias vns='sudo versh net-start default'
+alias vnd='sudo virsh net-delete default'
+alias lvd='sudo systemctl start libvirtd'
+
 # other stuff
 alias xwz='xwallpaper --zoom'
 alias sbrc='source ~/.bashrc'
 alias sx='startx'
-alias vns='sudo versh net-start default'
-alias vnd='sudo virsh net-delete default'
 alias yt='yt-dlp'
+alias df='df -h'
 
 PS1='[\u@\h \W]\$ '
