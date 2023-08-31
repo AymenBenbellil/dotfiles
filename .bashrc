@@ -25,7 +25,6 @@ alias pq='pacman -Q'
 alias pu='sudo pacman -Syu'
 alias yi='yay -S'
 alias ys='yay -Ss'
-alias yr='yay -Rs'
 alias yu='yay -Syu'
 
 # power management
