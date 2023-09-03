@@ -60,4 +60,5 @@ alias sx='startx'
 alias yt='yt-dlp'
 alias df='df -h'
 
+
 PS1='[\u@\h \W]\$ '

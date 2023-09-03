@@ -34,6 +34,14 @@ fi
 
 
 
+# declare variables
+wallpaper=~/wallpapers/astro.jpg
+
+# multi-language keyboard
+fcitx5 &
+
+# set a wallpaper
+xwallpaper --zoom $wallpaper
 
 # Window Manager
 exec i3
