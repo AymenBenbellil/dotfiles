@@ -16,8 +16,6 @@ set $mod Mod4
 #font pango:JetBrains Mono 14
 
 
-# wallpaper
-exec --no-startup-id xwallpaper --zoom ~/wallpapers/astro.jpg
 
 # Gaps
 gaps inner 8
@@ -29,7 +27,7 @@ default_floating_border pixel 1
 
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #d65d0e #282828 #ffffff #b8bb26   #b8bb26
+client.focused          #d79921 #282828 #ffffff #d79921   #d79921
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
@@ -155,6 +153,9 @@ bindsym $mod+Control+Return exec --no-startup-id alacritty -e ranger
 
 # Open pavucontrol
 bindsym $mod+Control+s exec --no-startup-id pavucontrol
+
+# take a screenshot
+bindsym $mod+Print exec --no-startup-id ~/.local/scripts/screenshot.sh
 
 # focus the child container
 #bindsym $mod+d focus child
