@@ -27,7 +27,6 @@ alias pc='sudo pacman -Sc'
 alias pqo='pacman -Qdt'
 alias yi='yay -S'
 alias ys='yay -Ss'
-alias yu='yay -Syu'
 
 # power management
 alias po='sudo poweroff'
