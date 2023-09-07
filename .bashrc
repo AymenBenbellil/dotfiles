@@ -36,7 +36,7 @@ alias rb='sudo reboot'
 # suckless stuff
 alias m='make'
 alias mc='make clean && sudo rm config.h'
-alias mic='sudo make install clean'
+alias mic='sudo make install clean && rm config.h'
 
 # usb actions
 alias musb='sudo mount /dev/sdc1 /media/usb'
@@ -47,11 +47,6 @@ alias eusb='sudo eject /dev/sdc'
 alias vi='vim'
 alias svi='sudo vim'
 alias vib='vim ~/.bashrc'
-
-# qemu/libvirt actions
-alias vns='sudo versh net-start default'
-alias vnd='sudo virsh net-delete default'
-alias lvd='sudo systemctl start libvirtd'
 
 # other stuff
 alias xwz='xwallpaper --zoom'

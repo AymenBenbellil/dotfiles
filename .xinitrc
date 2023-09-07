@@ -44,4 +44,4 @@ fcitx5 &
 xwallpaper --zoom $wallpaper
 
 # Window Manager
-exec i3
+exec dwm
