@@ -6,6 +6,11 @@
 [[ $- != *i* ]] && return
 
 
+# Variables/Defaults
+EDITOR=vim
+BROWSER=librewolf
+
+
 # terminal files stuff
 alias ls='ls --color=auto'
 alias la='ls -a'
@@ -27,6 +32,7 @@ alias pc='sudo pacman -Sc'
 alias pqo='pacman -Qdt'
 alias yi='yay -S'
 alias ys='yay -Ss'
+alias yu='yay -Syu'
 
 # power management
 alias po='sudo poweroff'
@@ -43,9 +49,10 @@ alias uusb='sudo umount /dev/sdc1'
 alias eusb='sudo eject /dev/sdc'
 
 # vim shortcuts
-alias vi='vim'
-alias svi='sudo vim'
-alias vib='vim ~/.bashrc'
+alias vi='nvim'
+alias svi='sudo nvim'
+alias vib='nvim ~/.bashrc'
+alias vix='nvim ~/.xinitrc'
 
 # other stuff
 alias xwz='xwallpaper --zoom'
@@ -53,6 +60,7 @@ alias sbrc='source ~/.bashrc'
 alias sx='startx'
 alias yt='yt-dlp'
 alias df='df -h'
+alias ref='sudo reflector --latest 10 --sort rate --save /etc/pacman.d/mirrorlist'
 
 
 PS1='[\u@\h \W]\$ '
