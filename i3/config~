@@ -131,7 +131,13 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # Browser
-bindsym $mod+w exec  --no-startup-id firefox
+bindsym $mod+w exec  --no-startup-id librewolf
+
+# Open youtube
+bindsym $mod+y exec  --no-startup-id librewolf youtube.com
+
+# Open github
+bindsym $mod+g exec  --no-startup-id librewolf github.com/AymenBenbellil?tab=repositories
 
 # Open thunar
 bindsym $mod+Shift+Return exec --no-startup-id thunar
@@ -147,6 +153,9 @@ bindsym $mod+Control+s exec --no-startup-id pavucontrol
 
 # take a screenshot
 bindsym $mod+Print exec --no-startup-id ~/.local/scripts/screenshot.sh
+
+# video player
+bindsym $mod+Control+v exec --no-startup-id ~/.local/scripts/mpv-play.sh
 
 # choose a man page to read
 bindsym $mod+m exec --no-startup-id ~/.local/scripts/man.sh
