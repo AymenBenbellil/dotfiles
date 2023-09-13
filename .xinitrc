@@ -37,11 +37,20 @@ fi
 # declare variables
 wallpaper=~/wallpapers/astro.jpg
 
+# start the network manager applet
+#nm-applet &
+
 # multi-language keyboard
 fcitx5 &
+
+# status for dwm
+#dwmblocks &
+
+# launch polybar
+#~/.config/polybar/launch.sh
 
 # set a wallpaper
 xwallpaper --zoom $wallpaper
 
 # Window Manager
-exec dwm
+exec i3
