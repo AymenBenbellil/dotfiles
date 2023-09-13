@@ -33,6 +33,7 @@ alias pqo='pacman -Qdt'
 alias yi='yay -S'
 alias ys='yay -Ss'
 alias yu='yay -Syu'
+alias ref='sudo reflector -c france --latest 10 --sort rate --save /etc/pacman.d/mirrorlist'
 
 # power management
 alias po='sudo poweroff'
@@ -60,7 +61,9 @@ alias sbrc='source ~/.bashrc'
 alias sx='startx'
 alias yt='yt-dlp'
 alias df='df -h'
-alias ref='sudo reflector --latest 10 --sort rate --save /etc/pacman.d/mirrorlist'
+alias kfdm='pkill -e fdm'
+alias ssystemctl='sudo systemctl'
+alias vic='vim ~/.config/i3/config'
 
 
 PS1='[\u@\h \W]\$ '
