@@ -13,6 +13,9 @@ BROWSER=firefox
 # activate vi mode in bash
 set -o vi
 
+# run neofetch
+neofetch
+
 # terminal files stuff
 alias ls='ls --color=auto'
 alias la='ls -a'
