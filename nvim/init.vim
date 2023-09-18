@@ -17,7 +17,7 @@ if v:progname =~? "evim"
 endif
 
 " Get the defaults that most users want.
-source ~/.config/nvim/defaults.vim
+" source ~/.config/nvim/defaults.vim
 
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
