@@ -2,7 +2,7 @@ This is mostly a backup of my dotfiles, but you are more than welcome to use the
 Read the README.md whenever available.\
 \
 \
-<span style="color:#ebdbb2">**What my system looks like?**</span>\
+**What my system looks like?**\
 \
 \
 i3\
