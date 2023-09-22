@@ -8,4 +8,4 @@ What my system looks like\
 \
 ![alt text](https://github.com/AymenBenbellil/aymenbenbellil.github.io/blob/main/photos/i3-2.png "neovim")\
 \
-![alt text](https://github.com/AymenBenbellil/aymenbenbellil.github.io/blob/main/photos/firefox.png "firefox")\
+![alt text](https://github.com/AymenBenbellil/aymenbenbellil.github.io/blob/main/photos/firefox.png "firefox")
