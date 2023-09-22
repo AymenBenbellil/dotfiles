@@ -6,8 +6,10 @@ What my system looks like?\
 \
 \
 i3\
+\
 ![alt text](https://github.com/AymenBenbellil/aymenbenbellil.github.io/blob/main/photos/i3.png "i3")\
 \
 \
 neovim\
+\
 ![alt text](https://github.com/AymenBenbellil/aymenbenbellil.github.io/blob/main/photos/nvim.png "neovim")
