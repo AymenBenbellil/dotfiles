@@ -4,4 +4,6 @@ Read the README.md whenever available.\
 \
 What my system looks like\
 \
-![alt text](https://github.com/AymenBenbellil/aymenbenbellil.github.io/blob/main/photos/i3-1.png "i3")
+![alt text](https://github.com/AymenBenbellil/aymenbenbellil.github.io/blob/main/photos/i3-1.png "i3")\
+\
+![alt text](https://github.com/AymenBenbellil/aymenbenbellil.github.io/blob/main/photos/i3-2.png "i3")\
