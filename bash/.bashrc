@@ -73,4 +73,5 @@ alias vic='vim ~/.config/i3/config'
 alias cpio='sudo mkinitcpio -P'
 
 #PS1='[\u@\h \W]\$ '
-PS1="\[\033[1;34m\] 󰣇 \[\e[1;35m\] \w \[\e[1;32m\] \[\e[1;37m\] "
+#PS1="\[\033[1;34m\] 󰣇 \[\e[1;35m\] \w \[\e[1;32m\] \[\e[1;37m\] "
+PS1="\[\e[1;34m\] \w \[\e[1;32m\] \[\e[1;37m\] "
