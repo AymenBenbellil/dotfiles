@@ -1,2 +1,2 @@
-My Bash Config.\
-Personal Aliases, vi mode and variables.
+-My Bash Config-\
+Added personal aliases, vi mode and declared variables.
