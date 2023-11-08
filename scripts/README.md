@@ -1,3 +1,2 @@
-My scripts.\
-man.sh allows you to search for a manual page using dmenu.\
-screenshot.sh takes screenshots, you have to edit this one to your liking.
+# My scripts
+screenshot.sh: takes screenshots and saves them in a perticular directory, you have to edit this one to your liking.
