@@ -1,19 +1,19 @@
 #!/bin/sh
 
 # declare variables
-wallpaper=~/wallpapers/astro.jpg
+wallpaper=~/wallpapers/astro.jpg # wallpaper variable
 
 # start the network manager applet
-nm-applet &
+nm-applet & # display the network manager icon in the systray
 
 # keyboard changes
-setxkbmap -layout us,ara -option grp:sclk_toggle -option caps:escape
+setxkbmap -layout us,ara -option grp:sclk_toggle -option caps:escape # remap caps_lock key to escape, add arabic language and toggle between english and arabic with the scroll_lock key
 
 # status for dwm
-dwmblocks &
+dwmblocks & # start dwmblocks
 
 # set a wallpaper
-xwallpaper --zoom $wallpaper
+xwallpaper --zoom $wallpaper # set a wallpaper
 
 # Window Manager
-exec dwm
+exec dwm # start dwm
