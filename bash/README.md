@@ -1,2 +1,3 @@
 # My Bash Config
-Added personal aliases, vi mode and declared variables.
+bashrc :  Added personal aliases, vi mode and declared variables.\
+bash_profile :  Auto execute startx.
