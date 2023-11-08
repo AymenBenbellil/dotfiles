@@ -4,9 +4,11 @@
 [[ $- != *i* ]] && return
 
 
-# Variables/Defaults
-EDITOR=nvim
-BROWSER=firefox
+# declaring variables
+country=France # country variable
+pm=pacman # package manager variable
+aurh=yay # aur helper variable
+editor=nvim # text editor variable
 
 # activate vi mode in bash
 set -o vi
@@ -15,63 +17,63 @@ set -o vi
 #neofetch
 
 # terminal files stuff
-alias ls='ls --color=auto'
-alias la='ls -a'
-alias l='ls -lh'
-alias ll='ls -alh'
-alias grep='grep --color=auto'
-alias rmr='sudo rm -r'
-alias scp='sudo cp'
-alias cpr='cp -r'
-alias scpr='sudo cp -r'
+alias ls='ls --color=auto' # list unhidden files and directories with colors
+alias la='ls -a' # list both hidden and unidden files and directories
+alias l='ls -lh' # ls with the -l (columns) and -h (human readable format) flags
+alias ll='ls -alh' # la + l = ll
+alias grep='grep --color=auto' # grep with colors
+alias rmr='sudo rm -rf' # remove (delete) files and directories completly from your system (can't recover them)
+alias scp='sudo cp' # added sudo privllages to cpoying files
+alias cpr='cp -r' # copy entire directories
+alias scpr='sudo cp -r' # The previous alias with sudo privllages
 
 # pacman & yay
-alias pi='sudo pacman -S' # Pacman Install
-alias py='sudo pacman -Syy' # Pacman Install
-alias pr='sudo pacman -Rs' # Pacman Remove
-alias ps='pacman -Ss' # Pacman Search
-alias pq='pacman -Q' # Pacman Query
-alias pqi='pacman -Qi' # Pacman Query Installed
-alias pqo='pacman -Qdt' # Pacman Query a certain program
-alias pu='sudo pacman -Syu' # Pacman Update
-alias pc='sudo pacman -Sc' # Pacman Clear cache
-alias yi='yay -S' # Yay Install
-alias ys='yay -Ss' # Yay Search
-alias ref='sudo reflector -c France --latest 10 --sort rate --save /etc/pacman.d/mirrorlist'
+alias pi='sudo '$pm' -S' # Pacman Install
+alias py='sudo '$pm' -Syy' # Pacman Install
+alias pr='sudo '$pm' -Rs' # Pacman Remove
+alias ps=''$pm' -Ss' # Pacman Search
+alias pq=''$pm' -Q' # Pacman Query
+alias pqi=''$pm' -Qi' # Pacman Query Installed
+alias pqo=''$pm' -Qdt' # Pacman Query a certain program
+alias pu='sudo '$pm' -Syu' # Pacman Update
+alias pc='sudo '$pm' -Sc' # Pacman Clear cache
+alias yi=''$aurh' -S' # Yay Install
+alias ys=''$aurh' -Ss' # Yay Search
+alias ref='sudo reflector -c '$country' --latest 10 --sort rate --save /etc/pacman.d/mirrorlist' # Setting the fastest mirrors that are the closest to selected country (runs with sudo privileges)
 
 # power management
-alias po='sudo poweroff' # PowerOff
-alias rb='sudo reboot' # ReBoot
+alias po='sudo poweroff' # PowerOff (Shutdown) your system
+alias rb='sudo reboot' # ReBoot your system
 
 # suckless stuff
-alias m='make'
-alias mc='make clean && sudo rm config.h'
-alias mic='sudo make install clean && rm config.h'
+alias m='make' # Simple alias for the make command
+alias mc='make clean && sudo rm config.h' # The previous alias with the clean and remove config.h options added to it for suckless software
+alias mic='sudo make install clean && rm config.h' # The previous alias with the install option and sudo privileges added to it
 
 # usb actions
-alias musb='sudo mount /dev/sdc1 /media/usb' # Mount USB
-alias uusb='sudo umount /dev/sdc1' # Unmount USB
-alias eusb='sudo eject /dev/sdc' # Eject USB
+alias musb='sudo mount /dev/sdc1 /media/usb' # Mount USB drive
+alias uusb='sudo umount /dev/sdc1' # Unmount USB drive
+alias eusb='sudo eject /dev/sdc' # Eject USB drive
 alias mwin='sudo mount /dev/sda1 /mnt/win/' # mount your windows C: drive
 
-# vim shortcuts
-alias vi='nvim'
-alias svi='sudo nvim'
-alias vib='nvim ~/.bashrc'
-alias vix='nvim ~/.xinitrc'
-alias mir='sudo nvim /etc/pacman.d/mirrorlist'
+# neovim shortcuts
+alias vi=''$editor'' # Replace nvim with vi (visual editor) using when the terminal
+alias svi='sudo '$editor'' # The previous alias with sudo privileges
+alias vib=''$editor' ~/.bashrc' # Edit the bashrc file
+alias vix=''$editor' ~/.xinitrc' # Edit the xinitrc file
+alias vin=''$editor' ~/.config/nvim/init.lua' # Edit the Neovim init.lua config file
+alias mir='sudo '$editor' /etc/pacman.d/mirrorlist' # Edit the pacman mirrorlist file
 
 # other stuff
-alias xwz='xwallpaper --zoom'
-alias sbrc='source ~/.bashrc'
-alias sx='startx'
-alias yt='yt-dlp'
-alias df='df -h'
-alias kfdm='pkill -e fdm'
-alias ssystemctl='sudo systemctl'
-alias vic='vim ~/.config/i3/config'
-alias cpio='sudo mkinitcpio -P'
+alias xwz='xwallpaper --zoom' # set your wallpaper
+alias sbrc='source ~/.bashrc' # source your bashrc file
+alias sx='startx' # simple alias for the startx command
+alias yt='yt-dlp' # simple alias for the yt-dlp command
+alias df='df -h' # adding the -h (human readable format) flag to the df command
+alias kfdm='pkill -e fdm' # alias for killing fdm (free download manager)
+alias ssystemctl='sudo systemctl' # adding sudo privileges to the systemctl command
+alias cpio='sudo mkinitcpio -P' # simple alias for the mkinitcpio command
 
-#PS1='[\u@\h \W]\$ '
-#PS1="\[\033[1;34m\] 󰣇 \[\e[1;35m\] \w \[\e[1;32m\] \[\e[1;37m\] "
-PS1="\[\e[1;34m\] \w \[\e[1;32m\] \[\e[1;37m\] "
+# bash prompt customization
+#PS1='[\u@\h \W]\$ ' # default
+PS1="\[\e[1;34m\] \w \[\e[1;32m\] \[\e[1;37m\] " # personal
