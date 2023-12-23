@@ -7,4 +7,4 @@
 - TreeSitter.
 - Gruvbox colorscheme.
 
-The rest is explained in the **init.lua** file.
+The rest is explained in the ***init.lua*** file.
