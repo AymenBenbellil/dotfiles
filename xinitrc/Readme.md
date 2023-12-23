@@ -1,2 +1,2 @@
 # My xinitrc Config
-Everything is mentioned in comment inside the file
+Everything is mentioned inside the ***xinitrc*** file.
