@@ -1,3 +1,3 @@
 # My scripts
-screenshot.sh takes screenshots and saves them in a perticular directory, you have to edit this one to your liking.\
-The install_base_packages.sh file has most of the software that i need to get my system up and running.
+***screenshot.sh***: takes a screenshot and saves it in the desired directory.\
+***install_base_packages.sh***: has most of the software that i need to get my system up and running.
