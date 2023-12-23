@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # declare variables
-wallpaper=~/wallpapers/astro.jpg # wallpaper variable
+wallpaper=~/other/wallpapers/282828.png # wallpaper variable
 
 # start the network manager applet
 nm-applet & # display the network manager icon in the systray
